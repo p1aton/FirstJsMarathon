@@ -1,4 +1,3 @@
-<script>
 
 
 //Мое решение 
@@ -13,9 +12,6 @@ function getRow(firstRow, secondRow) {
 
 const countFirst = [...firstRow].filter(l => l === letter).length;
 const countSecond = [...secondRow].filter(l => l === letter).length;
-
-//sumFirst = (firstRow.charAt(1) + firstRow.charAt(3) + firstRow.charAt(8) + firstRow.charAt(11)).length;
-//sumSecond = (secondRow.charAt(3) + secondRow.charAt(5) + secondRow.charAt(19)).length;
 
 if (countFirst > countSecond) {
 	return firstRow
@@ -136,9 +132,5 @@ function countedChar(row, char) {
 
 console.log(getRow(firstRow, secondRow));
 
-
-
-
-</script>
 
 
