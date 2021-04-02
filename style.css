@@ -44,6 +44,31 @@ body {
     align-items: center;
 }
 
+.logs {
+    width: 640px;
+    height: 460px;
+    position: relative;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* or absolute */
+    top: 50%;
+    left: 50%;
+    background: #f0f0f0;
+    margin: -25px 0 0 -300px;
+    overflow: auto;
+
+}
+
+.logs_text {
+    width: 630px;
+    margin: 0 auto;
+    font-size: xx-small;
+    text-align: left;
+    
+}
+
 .playground {
     max-width: 1024px;
     display: flex;
