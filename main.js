@@ -28,11 +28,28 @@ const enemy = {
   renderProgressbarHP: renderProgressbarHP,
 }
 
-$btn.addEventListener('click', function () {
+const click = $btn.addEventListener('click', function () {
   console.log('Kick');
   character.changeHP(random(20))
   enemy.changeHP(random(20))
+  btnCount()
 })
+
+//ДОМАШНЕЕ ЗАДАНИЕ
+
+function Count() {
+  sum = 0;
+  return function () {
+    sum +=1
+    console.log(sum);
+    if (sum >= 6) {
+      $btn.disabled = true;
+    }
+  }
+}
+
+const btnCount = Count();
+
 
 function init() {
   console.log('Start Game!');
